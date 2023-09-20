@@ -27,5 +27,5 @@
 | t-statistic | x | xx |
 
 ## References
-how to link to MI1 and MI2?
 
+Milestones: https://drive.google.com/drive/folders/1yCSYnEMdO9pQjDZjuaGB9ObXnRE6r9iZ?usp=sharing
