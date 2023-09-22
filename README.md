@@ -12,8 +12,9 @@
 We used R version 4.4.2. The packages we used were tidyverse version 1.3.2 and dplyr version 1.1.0.
 
 ### Using Code
-We began by cleaning the data. The removed variables in the initial dataset that were not pertinent to our research, and we filtered the type of publication to articles because we were look at news coverage. We focused on looking at the To calculate the frequency of COVID news coverage, we found the counts of the keywords "virus," "corona," "covid," "pandemic," and "epidemic."
-
+   We began by cleaning the data. We removed variables in the initial dataset that were not pertinent to our research, and we filtered the type of publication to articles because we were looking at news coverage. 
+   
+   We focused on searching the abstract, lead paragraph, keywords, main headline, and print line to find the counts of the words "virus," "corona," "covid," "pandemic," and "epidemic." To do this, we created an if else statement within a for loop for each month, which searched the abstract, lead paragraph, keywords, main headline, and print headline of each record until it found one of these words: "virus," "corona," "covid," "pandemic," or "epidemic."
 
 ## Data
 | Variable     | Description | 
@@ -34,10 +35,10 @@ We created a dataset containing information on New York Times publications from 
 The dataset can be found at this link. 
 https://drive.google.com/file/d/1tAAGNWN8PGAJL7AKRQ7nOqFMxavpBw_c/view?usp=drive_link
 
-
 ## Figures
 | Figure     | Value | Summary |
 |--------------|:-----:|:-----:|
+| frequency | x | xx |
 | t-statistic | x | xx |
 
 ## References
