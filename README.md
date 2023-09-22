@@ -1,24 +1,19 @@
 # DS4002_Project1
 
 ## Contents
-1. [SRC]
-2. [Data]
-3. [Figures]
-4. [References]
-
+1. SRC
+2. Data
+3. Figures
+4. References
+   
 ## SRC
-### Installing Code
+### Installing Code 
 
-***
-A little intro about the installation. 
-```
-$ git clone https://example.com
-$ cd ../path/to/the/file
-$ npm install
-$ npm start
-```
+We used R version 4.4.2. The packages we used were tidyverse version 1.3.2 and dplyr version 1.1.0.
 
 ### Using Code
+We began by cleaning the data. The removed variables in the initial dataset that were not pertinent to our research, and we filtered the type of publication to articles because we were look at news coverage. We focused on looking at the To calculate the frequency of COVID news coverage, we found the counts of the keywords "virus," "corona," "covid," "pandemic," and "epidemic."
+
 
 ## Data
 | Variable     | Description | 
