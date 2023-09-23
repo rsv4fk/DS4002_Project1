@@ -1,3 +1,3 @@
 The data used in this project can be found at the link below.
 
-https://drive.google.com/drive/folders/1vLIIAFn1NoAg1cpILR5uDy63BM465rL6?usp=sharing
+https://drive.google.com/file/d/16SsuePp1FNpH-O0FbY62PyNdL17Y2AYU/view?usp=sharing
