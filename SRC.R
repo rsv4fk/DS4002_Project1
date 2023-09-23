@@ -1,7 +1,8 @@
-# Data cleaning
+# import libraries
 library(tidyverse)
 library(dplyr)
 
+# data cleaning
 rawdata <- read.csv("C:\\Users\\ravza\\OneDrive\\Documents\\3rd Year\\Fall 2023\\DS 4002\\RawAnalyticFile.csv")
 data1 <- rawdata[,-c(1, 4, 5, 7, 8, 9, 13, 14, 16, 17, 18, 21)]
 data2 <- data1 %>% filter(document_type == "article")
@@ -49,7 +50,7 @@ count_2022_09 <- 0
 count_2022_10 <- 0
 count_2022_11 <- 0
 
-
+# calculating counts of COVID mentions per month
 
 for(x in 1:4199){
   if(grepl("virus", data4[x, 2]) | 
@@ -1143,6 +1144,8 @@ for(x in 135412:137061){
   }else{
     count_2022_11 <- count_2022_11 + 0}
 }
+
+# calculating COVID coverage as percentage of all articles published in a given month
 
 monthly_totals <- as.data.frame(data4 %>% count(Date))[,2]
 count_totals <- c(count_2020_01, count_2020_02, count_2020_03, count_2020_04, count_2020_05, count_2020_06, count_2020_07, count_2020_08, count_2020_09, count_2020_10, count_2020_11, count_2020_12, count_2021_01, count_2021_02, count_2021_03, count_2021_04, count_2021_05, count_2021_06, count_2021_07, count_2021_08, count_2021_09, count_2021_10, count_2021_11, count_2021_12, count_2022_01, count_2022_02, count_2022_03, count_2022_04, count_2022_05, count_2022_06, count_2022_07, count_2022_08, count_2022_09, count_2022_10, count_2022_11)
