@@ -21,7 +21,8 @@ We used R version 4.4.2. The packages we used were tidyverse version 1.3.2 and d
 ## Data
 | Variable     | Description | 
 |--------------|:-----:|
-| Date | year-month |        
+| Date | year-month |   
+| coverage_freq | the percentage of articles that mention COVID out of all the articles published that month
 | Abstract | A brief overview of the article |  
 | lead_paragraph | The first paragraph of the article |
 | keywords | Important words related to the article |
@@ -35,7 +36,7 @@ We used R version 4.4.2. The packages we used were tidyverse version 1.3.2 and d
 We created a dataset containing information on New York Times publications from January 2020 to November 2022. We also added economic indicators, unemployment rate and CPI, from the U.S. Bureau of Labor Statistics for each month. 
 
 The dataset can be found at this link. 
-https://drive.google.com/file/d/1tAAGNWN8PGAJL7AKRQ7nOqFMxavpBw_c/view?usp=drive_link
+https://drive.google.com/file/d/16SsuePp1FNpH-O0FbY62PyNdL17Y2AYU/view?usp=sharing
 
 ## Figures
 | Figure     | Value | Summary |
