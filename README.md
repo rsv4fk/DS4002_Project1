@@ -59,7 +59,7 @@ The datasets can be found at this link.
 | p-value for CPI | 0.876 | CPI is not a statistically significant predictor of unemployment rate at a significance level of 0.001. | 
 | coefficient for COVID news coverage | 1.930e-01 | In the final model, a 1% increase in COVID news coverage will lead to a 0.193% increase in the unemployment rate, holding the percentage change in cases constant. |
 | coefficient for percent change in COVID cases | -2.732e-05 | In the final model, a 1% increase in the percent change in COVID cases will lead to a 0.00002732% decrease in the unemployment rate, holding the COVID news coverage constant.
-| adjusted R-squared | 0.8359 | 83.59% of the variation in the unemployment rate can be explained by news coverage of COVID as well as the percent change in cases each month. | 
+| adjusted R-squared | 0.8359 | 83.59% of the variation in the unemployment rate can be explained by news coverage of COVID as well as the percent change in cases each month. |  
 
 ## References
 
