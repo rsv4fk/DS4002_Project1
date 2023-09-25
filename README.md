@@ -9,14 +9,20 @@
 ## SRC
 ### Installing Code 
 
-We used R version 4.4.2. The packages we used were tidyverse version 1.3.2 and dplyr version 1.1.0.
+We used R version 4.4.2. The packages we used were tidyverse version 1.3.2, dplyr version 1.0.10, stringr version 1.5.0, and berryFunctions version 1.22.0.
 
 ### Using Code
-   We began by cleaning the data. We removed variables in the initial dataset that were not pertinent to our research, and we filtered the type of publication to articles because we were looking at news coverage. 
+We began by cleaning the data and creating our dataset. We created a Date variable, which included the month and year of the publication of the article. Using this variable, merged the New York Times dataset with CPI and unemployment data from the U.S. Bureau of Labor Statistics. We removed variables in the initial dataset that were not pertinent to our research, and we filtered the type of publication to articles because we were looking at news coverage. 
    
-   We focused on searching the abstract, lead paragraph, keywords, main headline, and print line to find the counts of the words "virus," "corona," "covid," "pandemic," and "epidemic." To do this, we created an if else statement within a for loop for each month, which searched the abstract, lead paragraph, keywords, main headline, and print headline of each record until it found one of these words: "virus," "corona," "covid," "pandemic," or "epidemic." Using this count, we created a variable of the percentage of articles published that mentioned COVID for each month. 
+We focused on searching the abstract, lead paragraph, keywords, main headline, and print line to find the counts of the words "virus," "corona," "covid," "pandemic," and "epidemic." To do this, we created an if-else statement within a for loop for each month, which searched the abstract, lead paragraph, keywords, main headline, and print headline of each record until it found one of these words: "virus," "corona," "covid," "pandemic," or "epidemic." Using this count, we created a variable of the percentage of articles published that mentioned COVID for each month, which we added to the dataset. 
 
-   
+We then merged the data set with data on the number of monthly COVID cases from *******, filtering for all the cases located in the United States.
+
+To analyze the variables that affect unemployment rate, we found the correlation between COVID covereage frequency and unemployment, CPI and unemployment, number of COVID cases and unemployment, and the percentage change in the number of cases and unemployment. 
+
+We then conducted regresssions, beginning with news coverage as the only variable predeicting unemployment. To control for the number of COVID casess, we created a model adding the number of COVID cases per month to the original model as a predictor, and then we created another model adding percent change in COVID cases per month as another predictor. 
+
+Because the variable for percent change in COVID cases was significant, we added it to the model and also added CPI to control for economic changes. Finally, we conducted a regression with coverage frequency and the percent change in cases as predictors of the unemployment rate. 
    
 ## Data
 | Variable     | Description | 
@@ -35,7 +41,7 @@ We used R version 4.4.2. The packages we used were tidyverse version 1.3.2 and d
 
 We created a dataset containing information on New York Times publications from January 2020 to November 2022. We also added economic indicators, unemployment rate and CPI, from the U.S. Bureau of Labor Statistics for each month. 
 
-The dataset can be found at this link. 
+The datasets can be found at this link. 
 https://drive.google.com/file/d/16SsuePp1FNpH-O0FbY62PyNdL17Y2AYU/view?usp=sharing
 
 ## Figures
