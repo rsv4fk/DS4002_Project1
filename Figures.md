@@ -2,16 +2,16 @@
 
 | Figure     | Value | Summary |
 |--------------|:-----:|:-----:|
-| correlation | 0.818 | There is a strong, positive relationship between coverage frequency and unemployment rate. |
-| correlation | -0.658 | There is a moderate, negative relationship between CPI and unemployment rate. |
-| correlation | -0.179| There is a weak, negative relationship between case count and unemployment rate. |
-| correlation | -0.084| There is a very weak, negative relationship between the percent change in cases and unemployment rate. |
-| p-value | 1.92e-09 | Coverage frequency is a statistically significant predictor of unemployment rate at a significance level of 0.001. |
-| p-value| 0.130212 | Case count is not a statistically significant predictor of unemployment rate at a significance level of 0.001. | 
-| p-value | 9.80e-07 | The percentage change in cases is a statistically significant predictor of unemployment rate at a significance level of 0.001. |
-| p-value | 0.876 | CPI is not a statistically significant predictor of unemployment rate at a significance level of 0.001. | 
-| coefficient | 1.930e-01 | In the final model, a 1% increase in COVID news coverage will lead to a 0.193% increase in the unemployment rate, holding the percentage change in cases constant. |
-| coefficient | -2.732e-05 | In the final model, a 1% increase in the percentage change in COVID cases will lead to a 0.00002732% decrease in the unemployment rate, holding the COVID news coverage constant.
+| correlation between coverage frequency and unemployment rate | 0.818 | There is a strong, positive relationship between coverage frequency and unemployment rate. |
+| correlation between CPI and unemployment rate | -0.658 | There is a moderate, negative relationship between CPI and unemployment rate. |
+| correlation between case count and unemployment rate | -0.179| There is a weak, negative relationship between case count and unemployment rate. |
+| correlation between percent change in cases and unemployment rate | -0.084| There is a very weak, negative relationship between the percent change in cases and unemployment rate. |
+| p-value for coverage frequency | 1.92e-09 | Coverage frequency is a statistically significant predictor of unemployment rate at a significance level of 0.001. |
+| p-value for case count| 0.130212 | Case count is not a statistically significant predictor of unemployment rate at a significance level of 0.001. | 
+| p-value for percent change in cases | 9.80e-07 | The percentage change in cases is a statistically significant predictor of unemployment rate at a significance level of 0.001. |
+| p-value for CPI | 0.876 | CPI is not a statistically significant predictor of unemployment rate at a significance level of 0.001. | 
+| coefficient for COVID news coverage | 1.930e-01 | In the final model, a 1% increase in COVID news coverage will lead to a 0.193% increase in the unemployment rate, holding the percentage change in cases constant. |
+| coefficient for percent change in COVID cases | -2.732e-05 | In the final model, a 1% increase in the percent change in COVID cases will lead to a 0.00002732% decrease in the unemployment rate, holding the COVID news coverage constant.
 | adjusted R-squared | 0.8359 | 83.59% of the variation in the unemployment rate can be explained by news coverage of COVID as well as the percent change in cases each month. | 
 
 
