@@ -38,17 +38,25 @@ Because the variable for percent change in COVID cases was significant, we added
 | headline.print_headline | The title of the article in print |
 | unemployment.rate | Unemployment level of civilians aged 16 years and over |
 | CPI | Consumer price index |
+| case_count | The number of COVID cases in each month |
+| Percent_change_cases | The percentage change in the number of COVID cases each month |
 
-We created a dataset containing information on New York Times publications from January 2020 to November 2022. We also added economic indicators, unemployment rate and CPI, from the U.S. Bureau of Labor Statistics for each month. 
+We created a dataset containing information on New York Times publications from January 2020 to November 2022. We also added economic indicators, unemployment rate and CPI, from the U.S. Bureau of Labor Statistics for each month. We also added the number of COVID cases per month from Our World in Data. 
 
 The datasets can be found at this link. 
-https://drive.google.com/file/d/16SsuePp1FNpH-O0FbY62PyNdL17Y2AYU/view?usp=sharing
+[https://drive.google.com/file/d/16SsuePp1FNpH-O0FbY62PyNdL17Y2AYU/view?usp=sharing](https://drive.google.com/drive/folders/1vLIIAFn1NoAg1cpILR5uDy63BM465rL6?usp=sharing)
 
 ## Figures
 | Figure     | Value | Summary |
-|--------------|:-----:|:-----:|
-| frequency | x | xx |
-| t-statistic | x | xx |
+| correlation | 0.818 | There is a strong, positive relationship between coverage frequency and unemployment rate. |
+| correlation | -0.658 | There is a moderate, negative relationship between CPI and unemployment rate. |
+| correlation | -0.179| There is a weak, negative relationship between case count and unemployment rate. |
+| correlation | -0.084| There is a very weak, negative relationship between the percent change in cases and unemployment rate. |
+| F-statistic | 66.89 | Coverage frequency is a statistically significant predictor of unemployment rate. |
+| | | Case count is not a statistically significant predictor of unemployment rate. | 
+| | | The percentage change in cases is a statistically significant predictor of unemployment rate. |
+| | | CPI is not a statistically significant predictor of unemployment rate. | 
+| adjusted R-squared | 0.8359 | 83.59% of the variation in the unemployment rate can be explained by news coverage of COVID as well as the percent change in cases each month. | 
 
 ## References
 
