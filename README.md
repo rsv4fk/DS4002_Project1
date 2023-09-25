@@ -16,13 +16,13 @@ We began by cleaning the data and creating our dataset. We created a Date variab
    
 We focused on searching the abstract, lead paragraph, keywords, main headline, and print line to find the counts of the words "virus," "corona," "covid," "pandemic," and "epidemic." To do this, we created an if-else statement within a for loop for each month, which searched the abstract, lead paragraph, keywords, main headline, and print headline of each record until it found one of these words: "virus," "corona," "covid," "pandemic," or "epidemic." Using this count, we created a variable of the percentage of articles published that mentioned COVID for each month, which we added to the dataset. 
 
-We then merged the data set with data on the number of monthly COVID cases from *******, filtering for all the cases located in the United States.
+We then merged the data set with data on the number of monthly COVID cases from Our World in Data, filtering for all the cases located in the United States.
 
-To analyze the variables that affect unemployment rate, we found the correlation between COVID covereage frequency and unemployment, CPI and unemployment, number of COVID cases and unemployment, and the percentage change in the number of cases and unemployment. 
+In our initial analyses, we found the correlations between COVID coverage frequency and unemployment, CPI and unemployment, monthly total number of COVID cases and unemployment, and the monthly percent-change in the number of cases and unemployment.
 
-We then conducted regresssions, beginning with news coverage as the only variable predeicting unemployment. To control for the number of COVID casess, we created a model adding the number of COVID cases per month to the original model as a predictor, and then we created another model adding percent change in COVID cases per month as another predictor. 
+We then utilized multiple linear regression with a stepwise approach. Our initial model included level of news coverage as the only explanatory variable predicting unemployment. We then created a second model with the number of COVID cases as the sole control variable. Our third model built on the initial model, but instead of adding the number of COVID cases, we used the percent-change in COVID cases as the control variable. From analyses of these two models, we found that only the percent-change in COVID cases variable was significant, so we created a fourth model which included level of news coverage as the explanatory variable, the percent-change in COVID cases as the COVID-related control variable, and the CPI as the control variable related to economic-health. Conducting a t-test on the CPI variable in the fourth model, we determined that the variable was insignificant, and we removed it from the model.
 
-Because the variable for percent change in COVID cases was significant, we added it to the model and also added CPI to control for economic changes. Finally, we conducted a regression with coverage frequency and the percent change in cases as predictors of the unemployment rate. 
+Thus, our final model contained only the level of news coverage as the explanatory variable and the percent-change in COVID cases as our control variable. 
    
 ## Data
 | Variable     | Description | 
