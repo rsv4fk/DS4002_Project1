@@ -48,6 +48,7 @@ The datasets can be found at this link.
 
 ## Figures
 | Figure     | Value | Summary |
+|--------------|:-----:|:-----:|
 | correlation | 0.818 | There is a strong, positive relationship between coverage frequency and unemployment rate. |
 | correlation | -0.658 | There is a moderate, negative relationship between CPI and unemployment rate. |
 | correlation | -0.179| There is a weak, negative relationship between case count and unemployment rate. |
